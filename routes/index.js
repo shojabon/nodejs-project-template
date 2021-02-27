@@ -12,7 +12,4 @@ router.use("/static", require("express").static(path.join(__dirname, '../public/
 
 router.use("/module-data", require("express").static(path.join(__dirname, '../modules')));
 
-router.use("/event", require("./api/event-handler").router);
-router.use("/module", require("./api/module-manager").router);
-
 module.exports = router;
